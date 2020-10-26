@@ -1,0 +1,142 @@
+<!--
+// CRUD
+// César Becerra Ramírez
+// 1744338
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="caja">
+        <header>
+            <h2>CREAR</h2>
+        </header>
+        <section>
+    
+      
+            <form action="http://localhost:3000/c" method="post" id="formulario">
+                <br>
+                <div id="Nombre">
+                    <label for="fname">Nombre:</label><br>
+                    <input type="text" id="n" name="n"><br>
+                </div>
+                <div id="Apellido" >
+                    <label for="fname">Apellido:</label><br>
+                    <input type="text" id="a" name="a"><br>
+                </div>
+                
+                <div id="Numid" >
+                    <label for="lname">Numid:</label><br>
+                    <input type="text" id="nm" name="nm"><br>
+                </div>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+            <script>
+            function cambio(radio){
+                document.getElementById("formulario").action = "http://localhost:3000/c";
+                var Nombre = document.getElementById("Nombre");
+                var Apellido = document.getElementById("Apellido");
+                var Numid = document.getElementById("Numid");
+            }
+            </script>
+        </section>
+
+    </div>
+    <div class="caja">
+        <header>
+            <h2>LEER</h2>
+        </header>
+        <section>
+    
+      
+            <form action="http://localhost:3000/r" method="post" id="formulario">
+                <br>
+                <div id="Id">
+                    <label for="fname">Índice:</label><br>
+                    <input type="text" id="i" name="i"><br>
+                </div>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+            <script>
+            function cambio(radio){
+                document.getElementById("formulario").action = "http://localhost:3000/r";
+                var Id = document.getElementById("Id");
+            }
+            </script>
+        </section>
+
+    </div>
+    <div class="caja">
+        <header>
+            <h2>ACTUALIZAR</h2>
+        </header>
+        <section>
+    
+      
+            <form action="http://localhost:3000/u" method="post" id="formulario">
+                <br>
+                <div id="Id">
+                    <label for="fname">Índice:</label><br>
+                    <input type="text" id="i" name="i"><br>
+                </div>
+                <div id="Nombre">
+                    <label for="fname">Nombre:</label><br>
+                    <input type="text" id="n" name="n"><br>
+                </div>
+                <div id="Apellido" >
+                    <label for="fname">Apellido:</label><br>
+                    <input type="text" id="a" name="a"><br>
+                </div>
+                
+                <div id="Numid" >
+                    <label for="lname">Numid:</label><br>
+                    <input type="text" id="nm" name="nm"><br>
+                </div>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+            <script>
+            function cambio(radio){
+                document.getElementById("formulario").action = "http://localhost:3000/u";
+                var Id = document.getElementById("Id");
+                var Nombre = document.getElementById("Nombre");
+                var Apellido = document.getElementById("Apellido");
+                var Numid = document.getElementById("Numid");
+            }
+            </script>
+        </section>
+
+    </div>
+    <div class="caja">
+        <header>
+            <h2>ELIMINAR</h2>
+        </header>
+        <section>
+    
+      
+            <form action="http://localhost:3000/d" method="post" id="formulario">
+                <br>
+                <div id="Id">
+                    <label for="fname">Índice:</label><br>
+                    <input type="text" id="i" name="i"><br>
+                </div>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+            <script>
+            function cambio(radio){
+                document.getElementById("formulario").action = "http://localhost:3000/d";
+                var Id = document.getElementById("Id");
+            }
+            </script>
+        </section>
+
+    </div>
+</body>
+</html>
